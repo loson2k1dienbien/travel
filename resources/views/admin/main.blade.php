@@ -203,7 +203,7 @@
 
 
           <li class="nav-item has-treeview">
-            <a href="{{ route('category.index') }}" class="nav-link">
+            <a  class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Danh mục(Category)
@@ -225,9 +225,34 @@
               </li>
             </ul>
           </li>
+          <!-- ---------------------- Tag ------------------- -->
+          <li class="nav-item has-treeview">
+            <a  class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Tag
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('tag.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm thẻ</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('tag.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh thẻ</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
           <!-- ---------------------- Tour ------------------- -->
           <li class="nav-item has-treeview">
-            <a href="{{ route('tour.index') }}" class="nav-link">
+            <a class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Tour
@@ -249,6 +274,34 @@
               </li>
             </ul>
           </li>
+
+              <!-- ---------------------- service ------------------- -->
+           <li class="nav-item has-treeview">
+            <a class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Service
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('service.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm danh mục</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('service.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách danh mục</p>
+                </a>
+              </li>
+            </li>
+
+            </ul>
+          </li>
+
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
@@ -274,6 +327,126 @@
                 <a href="pages/tables/jsgrid.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>jsGrid</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- ---------------------- tour service detail ------------------- -->
+          <li class="nav-item has-treeview">
+            <a class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Tour Service Detail
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('tourService.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm danh mục</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('tourService.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách danh mục</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+              <!-- ---------------------- Payment ------------------- -->
+          <li class="nav-item has-treeview">
+            <a  class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+               Payment
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('payment.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm danh mục</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('payment.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách danh mục</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+              <!-- ---------------------- Order ------------------- -->
+          <li class="nav-item has-treeview">
+            <a  class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+               Order
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('order.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm danh mục</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('order.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách danh mục</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+                  <!-- ---------------------- guide ------------------- -->
+          <li class="nav-item has-treeview">
+            <a  class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+               Guide
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('guide.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm danh mục</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('guide.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách danh mục</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+                  <!-- ---------------------- Order guide ------------------- -->
+          <li class="nav-item has-treeview">
+            <a  class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+               OrderGuide
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('orderGuide.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm danh mục</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('orderGuide.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách danh mục</p>
                 </a>
               </li>
             </ul>
@@ -344,5 +517,6 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+@yield('script')
 </body>
 </html>
