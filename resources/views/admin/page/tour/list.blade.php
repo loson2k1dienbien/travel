@@ -50,9 +50,12 @@
                       <th>Name</th>
                       <th>Duration </th>
                       <th>Price </th>
+                      <th>Title </th>
                       <th>Content </th>
                       <th>Status </th>
                        <th>Piority </th>
+                       <th>img </th>
+
                         <th>TagID </th>
                       <th>
                         <a href="{{ route('tour.create') }}" class="btn btn-xs btn-primary">Thêm</a>
@@ -63,13 +66,15 @@
                     @foreach($cats as $model)
                       <tr>
                         <td>{{ $model->id }}</td>
-                        <td>{{ $model->CatID }}</td>
+                        <td>{{ $model->category->CatName }}</td>
                           <td>{{ $model->Name }}</td>
                           <td>{{ $model->Duration  }}</td>
                           <th>{{ $model->Price  }}</th>
+                          <th>{{ $model->Title  }}</th>
                           <th>{!! $model->Content  !!}</th>
                            <td>{{ $model->Status }}</td>
                             <td>{{ $model->Piority }}</td>
+                           <td><img id="blah" src="{{ url('public/upload/category')}}/{{ $model->Image }}" alt="" style="width:100px " /></td>
                               <td>{{ $model->TagID }}</td>
                             <td>
                                 <a href="{{ route('tour.edit',['tour'=>$model->id]) }}" class="btn btn-xs btn-primary ">Sửa</a>

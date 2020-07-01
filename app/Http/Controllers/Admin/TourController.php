@@ -18,7 +18,7 @@ class TourController extends Controller
     public function index()
     {
          $cats = Tour::paginate(10);
-        return view('admin.page.tour.list',compact('cats'));
+        return view('Admin.page.tour.list',compact('cats'));
     }
 
     /**

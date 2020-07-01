@@ -11,6 +11,7 @@ class Category extends Model
     protected $fillable = [
         'Keyword_Sell','CatName','URL_Image'
     ];
+
     public function add(){
         $file = request()->upload;
         $file_name = $file->getClientOriginalName();

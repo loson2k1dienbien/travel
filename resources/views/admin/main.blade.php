@@ -276,7 +276,7 @@
           </li>
 
               <!-- ---------------------- service ------------------- -->
-           <li class="nav-item has-treeview">
+        {{--    <li class="nav-item has-treeview">
             <a class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
@@ -300,7 +300,7 @@
             </li>
 
             </ul>
-          </li>
+          </li> --}}
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
@@ -332,7 +332,7 @@
             </ul>
           </li>
           <!-- ---------------------- tour service detail ------------------- -->
-          <li class="nav-item has-treeview">
+          {{-- <li class="nav-item has-treeview">
             <a class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
@@ -354,9 +354,9 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
               <!-- ---------------------- Payment ------------------- -->
-          <li class="nav-item has-treeview">
+          {{-- <li class="nav-item has-treeview">
             <a  class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
@@ -378,9 +378,9 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
               <!-- ---------------------- Order ------------------- -->
-          <li class="nav-item has-treeview">
+         {{--  <li class="nav-item has-treeview">
             <a  class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
@@ -402,9 +402,9 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
                   <!-- ---------------------- guide ------------------- -->
-          <li class="nav-item has-treeview">
+          {{-- <li class="nav-item has-treeview">
             <a  class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
@@ -426,9 +426,9 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
                   <!-- ---------------------- Order guide ------------------- -->
-          <li class="nav-item has-treeview">
+      {{--     <li class="nav-item has-treeview">
             <a  class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
@@ -450,7 +450,7 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

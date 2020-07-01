@@ -69,8 +69,6 @@
                     </select>
                   </div>
 
-
-
                    <div class="form-group">
                     <label for="exampleInputEmail1">Tên Tour </label>
                     <input type="text" class="form-control" id="Name" name="Name" placeholder="Nhập tên Tour">
@@ -86,6 +84,14 @@
                   <div class="form-group">
                     <label for="exampleInputEmail1">Nhập số ngày Tour </label>
                     <input type="text" class="form-control" id="CatName" name="Duration" placeholder="Nhập số ngày">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Số người tối đa </label>
+                    <input type="text" class="form-control" id="MaxGuest" name="MaxGuest" placeholder="Nhập số người tối đa">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Tiêu đề </label>
+                    <input type="text" class="form-control" id="Name" name="Title" placeholder="Nhập tieu đề">
                   </div>
                   <div class="card-body pad p-0 ">
                       <label for="exampleInputEmail1"> Giới thiệu </label>
@@ -103,16 +109,32 @@
                         @endforeach
                     </select>
                   </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="Status">
-                    <label class="form-check-label strong" for="exampleCheck1" >Trạng thái</label>
-
-                  </div>
-
-
-
-                </div>
-                <!-- /.card-body -->
+                  <label for="exampleInputFile"> Ảnh tiêu đề </label>
+                  <div class="form-group">
+                        <input type='file' onchange="readURL(this);" name="upload" multiple />
+                        <img id="blah" src="http://placehold.it/180" alt="your image" style="width:100px " />
+                    </div>
+                    <label for="exampleInputFile"> Trạng thái </label>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" type="radio" id="customRadio1" name="Status" value="1"checked>
+                          <label for="customRadio1" class="custom-control-label">Hiện</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" type="radio" id="customRadio2" name="Status"  value="0">
+                          <label for="customRadio2" class="custom-control-label">Ẩn</label>
+                        </div>
+                    </div>
+                  <div class="col-sm-6">
+                      <!-- radio -->
+                      <div class="form-group">
+                    </div>
+                    <label for="exampleInputFile">Những bức ảnh khác</label>
+                    <div class="form-group">
+                        <input type='file' onchange="readURL(this);" name="uploads[]" multiple />
+                        <img id="blah" src="http://placehold.it/180" alt="your image" style="width:100px " />
+                    </div>
+              <!-- /.card-body -->
 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
@@ -139,5 +161,19 @@
 $(document).ready(function () {
   bsCustomFileInput.init();
 });
+</script>
+<script>
+   function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
 </script>
 @endsection

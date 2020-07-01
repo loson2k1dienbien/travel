@@ -11,5 +11,5 @@ class adminController extends Controller
         return view('admin.page.index');
     }
 
-    // abc
+   
 }

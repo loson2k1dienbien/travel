@@ -19,10 +19,13 @@ class CreateToursTable extends Migration
             $table->string('Name',100)->unique();
             $table->integer('Duration');
             $table->float('Price');
-            $table->string('Content');
+            $table->text('Content');
+            $table->text('Title');
+            $table->integer('MaxGuest');
             $table->timestamps();
             $table->boolean('Status')->default(0);
             $table->string('Piority');
+            $table->string('Image');
             $table->unsignedInteger('TagID');
 
 
